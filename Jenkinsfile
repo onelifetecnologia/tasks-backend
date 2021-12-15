@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('Build Backend'){
             steps{
-                bat 'mvn clean package -DskipTests=true'
+                powershell 'mvn clean package -DskipTests=true'
             }
         }
     }
