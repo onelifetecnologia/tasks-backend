@@ -6,5 +6,10 @@ pipeline {
                 powershell 'mvn clean package -DskipTests=true'
             }
         }
+        stage('Unit Tests'){
+            steps{
+                powershell 'mvn test'
+            }
+        }
     }
 }
